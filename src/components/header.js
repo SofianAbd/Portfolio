@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import './header.scss';  // We'll create this CSS file in the next step
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faProjectDiagram, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     // Function to handle scroll

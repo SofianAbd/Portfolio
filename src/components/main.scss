@@ -1,13 +1,15 @@
 .heading {
     color: white;
-}
 
-.heading-name {
-    color: white;
-}
+    &-name, &-dev {
+        color: white;
+    }
 
-.heading-dev {
-    color : white;
+    span {
+        display: inline-block;
+        animation: wave-animation 2.1s infinite;
+        transform-origin: 70% 70%;
+    }
 }
 
 @keyframes wave-animation {
@@ -19,32 +21,26 @@
     }
 }
 
-.heading span {
-    display: inline-block;
-    animation: wave-animation 2.1s infinite;
-    transform-origin: 70% 70%;
-}
-
 .main {
     height: 900px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-}
 
-.main-left {
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    &-left {
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.main-right img {
-    max-height: 400px;
-}
+    &-right img {
+        max-height: 400px;
+    }
 
-.main-name {
-    color: #cd5ff8;
+    &-name {
+        color: #cd5ff8;
+    }
 }
 
 .heading-dev {
@@ -53,7 +49,7 @@
 
 @media (max-width: 1000px) {
     .main-right img {
-        max-height: 200px; /* ou toute autre valeur qui vous convient */
+        max-height: 200px;
     }
 }
 

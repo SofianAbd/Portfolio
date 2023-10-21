@@ -11,37 +11,37 @@
     z-index: 1000;  // Ensures the header stays on top of other elements
     transition: backdrop-filter 0.3s ease-in-out;
     backdrop-filter: blur(10px);
-}
 
-.header.scrolled {
-    backdrop-filter: blur(10px);
-}
+    &.scrolled {
+        backdrop-filter: blur(10px);
+    }
 
-.header nav {
-    margin-right: 80px;
-    display: flex;
-    align-items: center;
-}
+    nav {
+        margin-right: 80px;
+        display: flex;
+        align-items: center;
 
-.header nav ul {
-    display: flex;
-    gap: 50px;
-}
+        ul {
+            display: flex;
+            gap: 50px;
 
-.header nav ul li {
-    list-style: none;
-}
+            li {
+                list-style: none;
 
-.header nav ul li a {
-    font-size: 1.2rem !important;
-    font-weight: 600;
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-}
+                a {
+                    font-size: 1.2rem !important;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.3s;
 
-.header nav ul li a:hover {
-    color : #cd5ff8;
+                    &:hover {
+                        color : #cd5ff8;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {
