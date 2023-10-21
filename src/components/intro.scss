@@ -1,0 +1,95 @@
+// intro.scss
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;  // Ensures the container takes up the full height of the viewport
+  }
+  
+  .intro-main {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .intro-main__avatar img{
+    height: 200px;
+  }
+
+  .intro-main__avatar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-main__age {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .intro-contacts-header, .intro-contacts {
+    text-align: center;
+  }
+  
+  .intro-contacts-header h2, .intro-contacts p {
+    margin: 0 auto;  // Centers the text elements horizontally
+  }
+  
+  .intro-header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-main-left {
+    width: 20% ;
+  }
+
+  .intro-main-middle {
+    width: 30%;
+  }
+
+  .intro-main-right {
+    display: flex;
+    flex-direction: column;
+    width: 20% ;
+    text-align: center;
+  }
+
+
+  .intro-main__skills {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .intro-main__skills strong{
+    color : #cd5ff8;
+  }
+
+  .skills-wrapper {  /* Assuming .skill-container is the class of the container holding your skills */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  /* or use justify-content: flex-start; depending on your layout preference */
+  }
+
+  .skill {
+      width: auto;
+      margin: 5px;
+  }
+
+  @media (max-width: 800px) {
+    .intro-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-main > * {
+      width: 100%;
+  }
+    .intro-main-middle p{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .skill {
+      width: 30%;
+    }
+}

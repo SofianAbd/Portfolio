@@ -1,0 +1,51 @@
+.header {
+    position: fixed;  // or use position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);  // or any desired background color
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;  // Ensures the header stays on top of other elements
+    transition: backdrop-filter 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+.header.scrolled {
+    backdrop-filter: blur(10px);
+}
+
+.header nav {
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color : #cd5ff8;
+}
+
+@media (max-width: 800px) {
+    .header {
+        display: none;
+    }
+}

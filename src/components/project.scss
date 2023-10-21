@@ -1,0 +1,75 @@
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 150px;
+  
+    .project-header {
+      position: relative;
+      cursor: pointer;
+      border: 3px solid rgba(200, 137, 230, 0.637);
+      border-radius: 5px;
+      margin-right: 100px;
+      &:hover {
+        border-color: rgba(200, 137, 230, 0.8); 
+    }
+  
+      h2 {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+      }
+  
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+      }
+  
+      .icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        /* Ajoutez le style de l'icône ici */
+      }
+    }
+  
+    .project-details {
+      padding: 10px;
+      width: 30%;
+  
+      &.active {
+        display: block; /* Affiche les détails lorsqu'ils sont actifs */
+      }
+      h2 {
+        color: #cd5ff8;
+      }
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .project {
+        flex-direction: column;
+        align-items: center; /* or use 'align-items: center;' if you want to center align the content */
+        margin-bottom: 50px; /* Adjust margin as needed */
+    }
+
+    .project .project-header {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0; /* Reset margin-right */
+        /* ... other styles ... */
+    }
+
+
+    .project .project-details {
+        text-align: center ;
+        width: 100%; /* Adjust width for smaller screens */
+        /* ... other styles ... */
+    }
+}

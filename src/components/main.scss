@@ -1,0 +1,64 @@
+.heading {
+    color: white;
+}
+
+.heading-name {
+    color: white;
+}
+
+.heading-dev {
+    color : white;
+}
+
+@keyframes wave-animation {
+    0%, 100% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+.heading span {
+    display: inline-block;
+    animation: wave-animation 2.1s infinite;
+    transform-origin: 70% 70%;
+}
+
+.main {
+    height: 900px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-left {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-right img {
+    max-height: 400px;
+}
+
+.main-name {
+    color: #cd5ff8;
+}
+
+.heading-dev {
+    color : #cd5ff8;
+}
+
+@media (max-width: 1000px) {
+    .main-right img {
+        max-height: 200px; /* ou toute autre valeur qui vous convient */
+    }
+}
+
+@media (max-width: 600px) {
+    .main-right img {
+        display: none;
+    }
+}

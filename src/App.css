@@ -1,5 +1,15 @@
 .App {
-  text-align: center;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: thin;  /* Firefox */
+  scrollbar-color: transparent transparent;
+  width: 100vw;
+  height: 100vh;
+  position: relative; /* This ensures that child components with absolute positioning are relative to this container */
+  overflow: auto; /* Optional: in case child components go outside the viewport */
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .App-logo {
@@ -36,3 +46,4 @@
     transform: rotate(360deg);
   }
 }
+
